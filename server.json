@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/hash",
   "title": "Hash",
   "description": "Cryptographic hash & HMAC MCP.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/hash",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-hash",
