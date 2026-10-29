@@ -1,0 +1,47 @@
+[
+  {
+    "name": "hash",
+    "description": "Compute a cryptographic hash (hex digest) of text: algorithm = md5, sha1, sha256 (default), sha384, or sha512. Keyless/offline; the input is not stored or transmitted. MD5/SHA-1 are legacy (checksums only, not security).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "description": "The text to hash (UTF-8)."
+        },
+        "algorithm": {
+          "type": "string",
+          "description": "md5 | sha1 | sha256 (default) | sha384 | sha512."
+        }
+      },
+      "required": [
+        "text"
+      ]
+    }
+  },
+  {
+    "name": "hmac",
+    "description": "Compute an HMAC (hex) of text with a secret key. algorithm = sha1, sha256 (default), sha384, or sha512. Keyless/offline.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "description": "The message to authenticate."
+        },
+        "key": {
+          "type": "string",
+          "description": "The secret key."
+        },
+        "algorithm": {
+          "type": "string",
+          "description": "sha1 | sha256 (default) | sha384 | sha512."
+        }
+      },
+      "required": [
+        "text",
+        "key"
+      ]
+    }
+  }
+]
